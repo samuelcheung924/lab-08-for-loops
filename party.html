@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var userinput = prompt("Let's party! How long till the party?");
+      var usernum = parseInt(userinput, 10);
+      if (usernum < 1) {
+        console.log("PARTY ON!!");
+        document.write("PARTY ON!");
+      } else {
+        for (var i = usernum; i >= 1; i = i - 1) {
+          console.log(i);
+          document.write(i + "<br>");
+          if (i == 1) {
+            console.log("PARTY TIME!!!");
+            document.write("PARTY TIME!!!");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
